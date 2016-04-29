@@ -1,0 +1,675 @@
+/* Created by Debashis Biswas (gotechwithme@gmail.com) */
+
+#deb-page-background-glare-image
+{
+	background: none;
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+GetStyleUrl()+"images/Page-BgGlare.png',sizingMethod='crop')");
+}
+img
+{
+	filter:expression(fixPNG(this));
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.deb-Sheet, .deb-Sheet-body
+{
+	zoom:1;
+}
+
+.deb-Sheet-body
+{
+	position:static;
+}
+
+.deb-Sheet-tr, .deb-Sheet-tl, .deb-Sheet-br, .deb-Sheet-bl, .deb-Sheet-tc, .deb-Sheet-bc,.deb-Sheet-cr, .deb-Sheet-cl
+{
+	font-size: 1px;
+	background: none;
+}
+
+.deb-Sheet-tr, .deb-Sheet-tl, .deb-Sheet-br, .deb-Sheet-bl
+{
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/Sheet-s.png',sizingMethod='scale')");
+}
+
+.deb-Sheet-tl
+{
+	clip: rect(auto 39px 39px auto);
+}
+
+.deb-Sheet-tr
+{
+	left: expression(this.parentNode.offsetWidth-78+'px');
+	clip: rect(auto auto 39px 39px);
+}
+
+.deb-Sheet-bl
+{
+	top: expression(this.parentNode.offsetHeight-78+'px');
+	clip: rect(39px 39px auto auto);
+}
+
+.deb-Sheet-br
+{
+	top: expression(this.parentNode.offsetHeight-78+'px');
+	left: expression(this.parentNode.offsetWidth-78+'px');
+	clip: rect(39px auto auto 39px);
+}
+
+.deb-Sheet-tc, .deb-Sheet-bc
+{
+	width: expression(this.parentNode.offsetWidth-78+'px');
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/Sheet-h.png',sizingMethod='scale')");
+}
+
+.deb-Sheet-tc
+{
+	clip: rect(auto auto 39px auto);
+}
+
+.deb-Sheet-bc
+{
+	top: expression(this.parentNode.offsetHeight-78+'px');
+	clip: rect(39px auto auto auto);
+}
+
+.deb-Sheet-cr, .deb-Sheet-cl
+{
+	height: expression(this.parentNode.offsetHeight-78+'px');
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/Sheet-v.png',sizingMethod='scale')");
+}
+
+.deb-Sheet-cr
+{
+	left: expression(this.parentNode.offsetWidth-78+'px');
+	clip: rect(auto auto auto 39px);
+}
+
+.deb-Sheet-cl
+{
+	clip: rect(auto 39px auto auto);
+}
+
+.deb-Sheet-cc
+{
+	font-size: 1px;
+	width: expression(this.parentNode.offsetWidth-78+'px');
+	height: expression(this.parentNode.offsetHeight-78+'px');
+	background: none;
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/Sheet-c.png',sizingMethod='scale')");
+}
+#deb-page-background-simple-gradient, #deb-page-background-gradient, #deb-page-background-glare
+{
+	width:expression(document.body.clientWidth > 1000 ? "100%" : "1000px");
+}
+/* end Box, Sheet */
+
+/* begin Menu */
+
+.deb-menu ul
+{
+	height: 1%;
+	width:1px;
+}
+
+.deb-menu, .deb-menu ul
+{
+	height: 1%;
+}
+
+.deb-menu li.deb-menuhover
+{
+	z-index: 10000;
+}
+
+.deb-menu .deb-menuhoverUL
+{
+	visibility: visible;
+}
+
+.deb-menu .deb-menuhoverUL
+{
+	top: 100%;
+	left: 0;
+}
+
+.deb-menu .deb-menuhoverUL .deb-menuhoverUL
+{
+	top: 0;
+	left: 100%;
+}
+
+.deb-menu ul a
+{
+	height: 1%;
+}
+
+.deb-menu li li
+{
+	float: left;
+	width: 100%;
+}
+
+.deb-menu .deb-menuhoverUL .deb-menuhoverUL
+{
+	top: 5px;
+	left: 100%;
+}
+
+.deb-menu, .deb-menu ul
+{
+	height: 1%;
+}
+
+.deb-menu li.deb-menuhover
+{
+	z-index: 10000;
+}
+
+.deb-menu .deb-menuhoverUL
+{
+	visibility: visible;
+}
+
+.deb-menu .deb-menuhoverUL
+{
+	top: 100%;
+	left: 0;
+}
+
+.deb-menu .deb-menuhoverUL .deb-menuhoverUL
+{
+	top: 0;
+	left: 100%;
+}
+
+.deb-menu ul a
+{
+	height: 1%;
+}
+
+.deb-menu li li
+{
+	float: left;
+	width: 100%;
+}
+
+.deb-nav
+{
+	zoom: 1;
+}
+
+.deb-nav .l, .deb-nav .r
+{
+	font-size: 1px;
+	background: none;
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/nav.png',sizingMethod='crop')");
+}
+
+.deb-nav .l
+{
+	width: expression(this.parentNode.offsetWidth-0+'px');
+}
+
+.deb-nav .r
+{
+	left: expression(this.parentNode.offsetWidth-972+'px');
+	clip: rect(auto auto auto 972px);
+}
+
+/* end Menu */
+
+/* begin MenuItem */
+.deb-menu a
+{
+	float:left;
+}
+
+.deb-menu a:hover
+{
+	visibility:visible;
+}
+
+.deb-menu a .r, .deb-menu a .l
+{
+	font-size:1px;
+	background: none;
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/MenuItem.png',sizingMethod='crop')");
+}
+
+.deb-menu a .r
+{
+	left: expression(this.parentNode.offsetWidth-420+'px');
+	clip: rect(auto auto auto 410px);
+}
+
+.deb-menu a .l
+{
+	width: expression(this.parentNode.offsetWidth-10+'px');
+}
+
+.deb-menuhover .deb-menuhoverA .t
+{
+	color: #17242B;
+}
+
+.deb-menuhover .deb-menuhoverA .l, .deb-menuhover .deb-menuhoverA .r
+{
+	top: -31px;
+}
+/* end MenuItem */
+
+/* begin Box, Block */
+.deb-Block, .deb-Block-body
+{
+	zoom:1;
+}
+
+.deb-Block-body
+{
+	position:static;
+}
+
+.deb-Block-tr, .deb-Block-tl, .deb-Block-br, .deb-Block-bl, .deb-Block-tc, .deb-Block-bc,.deb-Block-cr, .deb-Block-cl
+{
+	font-size: 1px;
+	background: none;
+}
+
+.deb-Block-tr, .deb-Block-tl, .deb-Block-br, .deb-Block-bl
+{
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/Block-s.png',sizingMethod='scale')");
+}
+
+.deb-Block-tl
+{
+	clip: rect(auto 7px 7px auto);
+}
+
+.deb-Block-tr
+{
+	left: expression(this.parentNode.offsetWidth-14+'px');
+	clip: rect(auto auto 7px 7px);
+}
+
+.deb-Block-bl
+{
+	top: expression(this.parentNode.offsetHeight-14+'px');
+	clip: rect(7px 7px auto auto);
+}
+
+.deb-Block-br
+{
+	top: expression(this.parentNode.offsetHeight-14+'px');
+	left: expression(this.parentNode.offsetWidth-14+'px');
+	clip: rect(7px auto auto 7px);
+}
+
+.deb-Block-tc, .deb-Block-bc
+{
+	width: expression(this.parentNode.offsetWidth-14+'px');
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/Block-h.png',sizingMethod='scale')");
+}
+
+.deb-Block-tc
+{
+	clip: rect(auto auto 7px auto);
+}
+
+.deb-Block-bc
+{
+	top: expression(this.parentNode.offsetHeight-14+'px');
+	clip: rect(7px auto auto auto);
+}
+
+.deb-Block-cr, .deb-Block-cl
+{
+	height: expression(this.parentNode.offsetHeight-14+'px');
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/Block-v.png',sizingMethod='scale')");
+}
+
+.deb-Block-cr
+{
+	left: expression(this.parentNode.offsetWidth-14+'px');
+	clip: rect(auto auto auto 7px);
+}
+
+.deb-Block-cl
+{
+	clip: rect(auto 7px auto auto);
+}
+
+.deb-Block-cc
+{
+	font-size: 1px;
+	width: expression(this.parentNode.offsetWidth-14+'px');
+	height: expression(this.parentNode.offsetHeight-14+'px');
+	background-color: #E2EAEE;
+}
+/* end Box, Block */
+
+/* begin BlockHeader */
+.deb-BlockHeader, .deb-BlockHeader
+{
+	font-size: 1px;
+}
+.deb-BlockHeader .l, .deb-BlockHeader .r
+{
+	background: none;
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/BlockHeader.png',sizingMethod='crop')");
+}
+
+.deb-BlockHeader .r
+{
+	left: expression(this.parentNode.offsetWidth-982+'px');
+	clip: rect(auto auto auto 976px);
+}
+
+.deb-BlockHeader .l
+{
+	width: expression(this.parentNode.offsetWidth-6+'px');
+}
+
+.deb-header-tag-icon
+{
+	background: none;
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/BlockHeaderIcon.png',sizingMethod='crop')");
+}
+
+/* end BlockHeader */
+
+/* begin Box, BlockContent */
+.deb-BlockContent, .deb-BlockContent-body
+{
+	zoom:1;
+}
+
+.deb-BlockContent-body
+{
+	position:static;
+}
+
+.deb-BlockContent-tr, .deb-BlockContent-tl, .deb-BlockContent-br, .deb-BlockContent-bl, .deb-BlockContent-tc, .deb-BlockContent-bc,.deb-BlockContent-cr, .deb-BlockContent-cl
+{
+	font-size: 1px;
+	background: none;
+}
+
+.deb-BlockContent-tr, .deb-BlockContent-tl, .deb-BlockContent-br, .deb-BlockContent-bl
+{
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/BlockContent-s.png',sizingMethod='scale')");
+}
+
+.deb-BlockContent-tl
+{
+	clip: rect(auto 7px 7px auto);
+}
+
+.deb-BlockContent-tr
+{
+	left: expression(this.parentNode.offsetWidth-14+'px');
+	clip: rect(auto auto 7px 7px);
+}
+
+.deb-BlockContent-bl
+{
+	top: expression(this.parentNode.offsetHeight-14+'px');
+	clip: rect(7px 7px auto auto);
+}
+
+.deb-BlockContent-br
+{
+	top: expression(this.parentNode.offsetHeight-14+'px');
+	left: expression(this.parentNode.offsetWidth-14+'px');
+	clip: rect(7px auto auto 7px);
+}
+
+.deb-BlockContent-tc, .deb-BlockContent-bc
+{
+	width: expression(this.parentNode.offsetWidth-14+'px');
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/BlockContent-h.png',sizingMethod='scale')");
+}
+
+.deb-BlockContent-tc
+{
+	clip: rect(auto auto 7px auto);
+}
+
+.deb-BlockContent-bc
+{
+	top: expression(this.parentNode.offsetHeight-14+'px');
+	clip: rect(7px auto auto auto);
+}
+
+.deb-BlockContent-cr, .deb-BlockContent-cl
+{
+	height: expression(this.parentNode.offsetHeight-14+'px');
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/BlockContent-v.png',sizingMethod='scale')");
+}
+
+.deb-BlockContent-cr
+{
+	left: expression(this.parentNode.offsetWidth-14+'px');
+	clip: rect(auto auto auto 7px);
+}
+
+.deb-BlockContent-cl
+{
+	clip: rect(auto 7px auto auto);
+}
+
+.deb-BlockContent-cc
+{
+	font-size: 1px;
+	width: expression(this.parentNode.offsetWidth-14+'px');
+	height: expression(this.parentNode.offsetHeight-14+'px');
+	background-color: #CFDCE2;
+}
+
+.deb-BlockContent-body ul li
+{
+	height:1%;
+	background:none;
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/BlockContentBullets.png',sizingMethod='crop')");
+}
+
+/* end Box, BlockContent */
+
+/* begin Box, Post */
+.deb-Post, .deb-Post-body
+{
+	zoom:1;
+}
+
+.deb-Post-body
+{
+	position:static;
+}
+
+.deb-Post-tr, .deb-Post-tl, .deb-Post-br, .deb-Post-bl, .deb-Post-tc, .deb-Post-bc,.deb-Post-cr, .deb-Post-cl
+{
+	font-size: 1px;
+	background: none;
+}
+
+.deb-Post-tr, .deb-Post-tl, .deb-Post-br, .deb-Post-bl
+{
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/Post-s.png',sizingMethod='scale')");
+}
+
+.deb-Post-tl
+{
+	clip: rect(auto 7px 7px auto);
+}
+
+.deb-Post-tr
+{
+	left: expression(this.parentNode.offsetWidth-14+'px');
+	clip: rect(auto auto 7px 7px);
+}
+
+.deb-Post-bl
+{
+	top: expression(this.parentNode.offsetHeight-14+'px');
+	clip: rect(7px 7px auto auto);
+}
+
+.deb-Post-br
+{
+	top: expression(this.parentNode.offsetHeight-14+'px');
+	left: expression(this.parentNode.offsetWidth-14+'px');
+	clip: rect(7px auto auto 7px);
+}
+
+.deb-Post-tc, .deb-Post-bc
+{
+	width: expression(this.parentNode.offsetWidth-14+'px');
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/Post-h.png',sizingMethod='scale')");
+}
+
+.deb-Post-tc
+{
+	clip: rect(auto auto 7px auto);
+}
+
+.deb-Post-bc
+{
+	top: expression(this.parentNode.offsetHeight-14+'px');
+	clip: rect(7px auto auto auto);
+}
+
+.deb-Post-cr, .deb-Post-cl
+{
+	height: expression(this.parentNode.offsetHeight-14+'px');
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/Post-v.png',sizingMethod='scale')");
+}
+
+.deb-Post-cr
+{
+	left: expression(this.parentNode.offsetWidth-14+'px');
+	clip: rect(auto auto auto 7px);
+}
+
+.deb-Post-cl
+{
+	clip: rect(auto 7px auto auto);
+}
+
+.deb-Post-cc
+{
+	font-size: 1px;
+	width: expression(this.parentNode.offsetWidth-14+'px');
+	height: expression(this.parentNode.offsetHeight-14+'px');
+	background-color: #E6EFF4;
+}
+/* end Box, Post */
+
+/* begin PostContent */
+h1
+{
+  margin: 0.67em 0;
+}
+
+h2
+{
+  margin: 0.8em 0;
+}
+
+h3
+{
+  margin: 1em 0;
+}
+
+h4
+{
+  margin: 1.25em 0;
+}
+
+h5
+{
+  margin: 1.67em 0;
+}
+
+h6
+{
+  margin: 2.33em 0;
+}
+/* end PostContent */
+
+/* begin PostBullets */
+.deb-Post ul li, .deb-Post ol ul li
+{
+	height:1%;
+	background:none;
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/PostBullets.png',sizingMethod='crop')");
+}
+
+.deb-Post ul ol li
+{
+	background:none;
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="");
+}
+/* end PostBullets */
+
+/* begin PostQuote */
+blockquote,
+.deb-PostContent blockquote
+{
+	height:1%;
+	background-image: none;
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/PostQuote.png',sizingMethod='crop')");
+}
+/* end PostQuote */
+
+/* begin Button */
+.deb-button-wrapper, .deb-button-wrapper .l, .deb-button-wrapper .r
+{
+	font-size: 1px;
+}
+
+.deb-button-wrapper .deb-button
+{
+	float:left;
+}
+
+.deb-button-wrapper .l, .deb-button-wrapper .r
+{
+	background: none;
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/Button.png',sizingMethod='crop')");
+}
+
+.deb-button-wrapper .r
+{
+	left: expression(this.parentNode.offsetWidth-411+'px');
+	clip: rect(auto auto auto 400px);
+}
+
+.deb-button-wrapper .l
+{
+	width: expression(this.parentNode.offsetWidth-11+'px');
+}
+
+/* end Button */
+
+/* begin Footer */
+.deb-Footer .deb-Footer-background
+{
+	top: expression(this.parentNode.offsetHeight-150+'px');
+	background: none;
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/Footer.png',sizingMethod='crop')");
+	zoom: 1;
+	font-size:1px;
+}
+
+.deb-rss-tag-icon
+{
+	zoom:1;
+	font-size:1px;
+	background:none;
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"images/rssIcon.png',sizingMethod='crop')");
+}
+
+/* end Footer */
+
+
