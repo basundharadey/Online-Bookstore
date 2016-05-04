@@ -2,8 +2,6 @@
     String filename = request.getRequestURI().substring(request.getRequestURI().lastIndexOf("/")+1);
 %>
 
-<%@include file="pre_header.jsp" %>
-
 <%@include file="header.jsp" %>
             		<div class="deb-content">
                         <div class="deb-Post">
@@ -20,7 +18,7 @@
                         		<div class="deb-Post-inner">
                                         
                                 		<h2 class="deb-PostHeader">
-                                          B.A.D.S.A-- Books Online Shop
+                                            Aspirations Consultancy
                                         </h2>
                                         
                                     <div class="deb-Block">
@@ -38,16 +36,15 @@
                                         <div class="deb-PostContent">
                                         
                                         	<p>
-                                        		BADSA online bookshop ,takes a step further to help customers which include students,officials,and arid readers buy their favourite books,now online.BADSA provides an easy and secured way to buy books and dowbload them in a pdf format ,thereby making the books readers,read them anywhere,everywhere,
-
+                                        		The Aspirations is a burgeoning executive placement firm focusing on serving the customers by delivering the human resources precisely to their needs. We take pride in our precision of matching the competencies and aspirations of the people to the requirements from the human capital of our enterprise clients. We are committed to the enterprises and to their employees and it is in the collective satisfaction of our strategic partners and customers that we have achieved success.
                                         		
                                         		<br/><br/>
                                         		
-      											Its an initiative taken by the students of NSEC to bring forward an easy way to buy books
+      											Based in West Bengal, India, our humble beginning was to recruit local talents to meet the needs of our enterprise clients. However, we are growing across India and have set our footsteps beyond the nation as well.
       											
       											<br/><br/>
       											
-      											
+      											Our wide pool of resources and talents  empower us to meet the personnel requirements - at all categories and levels. Our promise is to aid enterprises with the right workforce enabling them to achieve your strategic objectives.
       										</p>
 
                                             <div style="text-align: right;" >

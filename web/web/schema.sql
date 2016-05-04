@@ -49,15 +49,15 @@ CREATE TABLE category_tags
 CREATE TABLE books
 (
     ISBN CHAR(13) PRIMARY KEY,
+    title VARCHAR2(255) NOT NULL,
     author1 NUMBER REFERENCES authors(id) ON DELETE CASCADE,
     author2 NUMBER DEFAULT '1' REFERENCES authors(id) ON DELETE CASCADE,
     author3 NUMBER DEFAULT '1' REFERENCES authors(id) ON DELETE CASCADE,
     author4 NUMBER DEFAULT '1' REFERENCES authors(id) ON DELETE CASCADE,
     author5 NUMBER DEFAULT '1' REFERENCES authors(id) ON DELETE CASCADE,
-    title VARCHAR2(255) NOT NULL,
     publisher NUMBER REFERENCES publishers(id) ON DELETE CASCADE,
     selling_price FLOAT NOT NULL,
-    discount_offered FLOAT NOT NULL,
+    discount_offered FLOAT DEFAULT '0' NOT NULL,
     publication_year CHAR(4) NOT NULL,
     edition NUMBER(2) NOT NULL,
     volume NUMBER(2) NOT NULL,

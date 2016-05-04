@@ -1,4 +1,4 @@
-/* Created by Debashis Biswas (gotechwithme@gmail.com) */ 
+/* Created by Debashis Biswas (gotechwithme@gmail.com) */
 
 cssFix = function(){
 var u = navigator.userAgent.toLowerCase(),
@@ -350,3 +350,4 @@ artLoadEvent.add(function() { artButtonsSetupJsHover("deb-button"); });
 /* end Button */
 
 
+/* Created by Debashis Biswas (gotechwithme@gmail.com) */

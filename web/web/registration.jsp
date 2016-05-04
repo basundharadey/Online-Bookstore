@@ -95,6 +95,7 @@
         if ( errors.size() == 0 )
         {
             ps = con.prepareStatement("insert into members values(?, ?, ?, ?, ?, TO_DATE(?, 'DD-MM-YYYY'), ?, ?, ?, ?, ?, ?, ?, ?)");
+
             ps.setString(1, isNull(request.getParameter("username")).trim());
             ps.setString(2, isNull(request.getParameter("password")).trim());
             ps.setString(3, isNull(request.getParameter("first_name")).trim());
@@ -114,7 +115,7 @@
 
             if( x != 1)
             {
-                errors.add("An error occured while processing your Registration request.");
+                errors.add("An error occured while processing your request.");
             }
         }
     }

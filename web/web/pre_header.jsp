@@ -18,3 +18,19 @@
         }
     }
 %>
+
+<%
+    class MyCart
+    {
+        public String isbn;
+        public int quantity;
+
+        public void setValues(String isbn, int quantity)
+        {
+            this.isbn = isbn;
+            this.quantity = quantity;
+        }
+    }
+
+    MyCart myCart = new MyCart();
+%>

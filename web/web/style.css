@@ -1488,4 +1488,50 @@ text-decoration: none;
 }
 /* end LayoutCell */
 
+/* begin suggestions */
 
+		/* a thin border around the containing DIV */
+		div.suggestions
+		{
+			border: 1px solid black;
+			background-color: white;
+			height : 50px;
+			overflow: auto;
+			z-index: 1;
+		}
+
+		/* get rid of the bullets and un-indent the list */
+		.suggestions ul
+		{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.suggestions ul li
+		{
+			background-image: none;
+			background-repeat: no-repeat;
+			padding-left: 10px;
+		}
+
+		.suggestions li
+		{
+			padding: 2px 3px;
+		}
+
+		.suggestions strong
+		{
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
+		.suggestions li.selected
+		{
+			color: white;
+			background-color: #33A0DB;
+		}
+
+/* end suggestions */
+
+/* Created by Debashis Biswas (gotechwithme@gmail.com) */
